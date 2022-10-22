@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.background {
+  background-image: url("./images/minecraft-29.jpg");
+  background-position: center center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.start {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(82, 214, 49);
+  color: black;
+  font-size: 20px;
+  line-height: 1.5em;
+  box-shadow: 2px 2px 2px black;
+}
+
+.title {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.logo {
+  width: 70%;
+}
+.game-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.board {
+  display: grid;
+  background-color: skyblue;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid black;
+  gap: 1px;
+}
+.board > div:hover {
+  scale: 0.9;
+  transition: all 0.5 ease-in-out;
+  opacity: 0.5;
+}
+.devtools {
+  background-color: rgba(245, 242, 224, 0.952);
+  /* width:20%; */
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.tool {
+  width: clamp(20px, 7vmin, 70px);
+  height: clamp(20px, 7vmin, 70px);
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.axe {
+  background-image: url("./images/axe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: clamp(20px, 7vmin, 70px);
+  height: clamp(20px, 7vmin, 70px);
+}
+.pickaxe {
+  background-image: url("./images/pickaxe.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: clamp(20px, 7vmin, 70px);
+  height: clamp(20px, 7vmin, 70px);
+}
+.shovel {
+  background-image: url("./images/shovel.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: clamp(20px, 7vmin, 70px);
+  height: clamp(20px, 7vmin, 70px);
+}
+h4 {
+  text-align: center;
+  font-size: 0.625rem;
+  font-size: clamp(
+    0.625rem,
+    0.5092592592592593rem + 0.6172839506172839vw,
+    1.25rem
+  );
+}
+
+.inventory {
+  width: clamp(100px, 45%, 400px);
+  height: clamp(80px, 70%, 400px);
+}
+
+.tool-box {
+  width: clamp(100px, 30%, 300px);
+  height: clamp(80px, 70%, 200px);
+}
+
+.nature-element {
+  width: clamp(20px, 7vmin, 70px);
+  height: clamp(20px, 7vmin, 70px);
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.restart-game {
+  width: clamp(30px, 15%, 90px);
+  height: clamp(100px, 70%, 150px);
+  display: flex;
+  flex-direction: column;
+}
+
+.restart-button {
+  background-color: rgb(245, 175, 150);
+  width: clamp(2px, 7vmin, 60px);
+  height: clamp(20px, 7vmin, 60px);
+  border-radius: 25%;
+}
+
+.active {
+  border: 5px solid green;
+}
+.error {
+  border: 5px solid red;
+}
+.dirt {
+  /* background-color: rgba(165, 97, 42, 0.829); */
+  background-image: url(./images/soil.jpg);
+  background-size: contain;
+  /* background-color: skyblue; */
+}
+.sky {
+  background-color: skyblue;
+}
+.grass {
+  /* background-color: green; */
+  background-image: url(./images/grass.png);
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+.cloud {
+  background-color: white;
+  /* background-image: url(./images/cloud.png);
+  background-size: contain; */
+}
+
+.rock {
+  background-color: grey;
+  background-image: url(./images/rock.png);
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+.trunk {
+  /* background-color: rgb(104, 50, 15); */
+  background: url("./images/tree.png");
+  background-size: contain;
+}
+.leaves {
+  background-color: greenyellow;
+  background: url("./images/leaf.png");
+  background-size: contain;
+}
